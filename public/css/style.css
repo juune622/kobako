@@ -1,0 +1,65 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+/* reset for pc */
+.mobile {display: none !important;}
+br.only-m {content: '';}
+br.only-m::after {content: ' ';}
+
+
+/* 전역 변수 설정 */
+:root {
+  --header-height: 90px;
+}
+
+/* common */
+body {font-family: 'Noto Sans KR', sans-serif;}
+body.no-scroll {}
+#wrapper {}
+#skip-nav {position: fixed; left: 0; top: -40px; width: 100%; line-height: 40px; text-align: center; background-color: rgba(0, 0, 0, 0.7); color: #ffffff; font-size: 16px; transition: top 0.3s; z-index: 10000;}
+#skip-nav:focus {top: 0;}
+
+#header {width: 100%;border-bottom: 1px solid #ddd;position: fixed;left: 0;top: 0;padding: 0 20px;}
+#header .container{max-width: 1400px;margin: 0 auto;height: var(--header-height);position: relative;}
+#header .container h1 {position: absolute;left: 0;top: 40%;transform: translate(0,-50%);}
+#header .container h1 a {display: block;}
+#header .container h1 a img{display: block;}
+.header-right {display: flex;position: absolute;right: 0;top: 0;height: 100%;color: #4b4b4b;}
+.header-right > ul{display: flex;align-items: center;}
+.header-right > ul.menu {font-size: 18px;font-weight: 700;}
+.header-right > ul.menu > li {}
+.header-right > ul.menu > li > a {padding: 30px;position: relative;}
+.header-right > ul.menu > li > a::after{content: '';position: absolute;width: 4px;height: 4px;border-radius: 4px;right: 26px;top: 28px; background-color: transparent;}
+.header-right > ul.menu > li > ul.sub-menu {width: 100%;background-color: #f8f8f8;position: fixed;left: 0;top: 91px;display: flex;height: 0;overflow: hidden;transition: height 0.3s;}
+.header-right > ul.menu > li > ul.sub-menu.on{height: auto;}
+.header-right > ul.menu > li > ul.sub-menu > li.left-info{width: 27%;position: relative;min-height: 345px;}
+.header-right > ul.menu > li > ul.sub-menu > li.left-info > div {height: 100%; position: absolute;top: 20px;right: 24%;}
+.header-right > ul.menu > li > ul.sub-menu > li.left-info  h2{font-size: 25px;color: #bc0130;margin-bottom: 20px;}
+.header-right > ul.menu > li > ul.sub-menu > li.left-info  p{color: #333;font-size: 16px;}
+.header-right > ul.menu > li > ul.sub-menu > li.left-info  img{display: block;position: absolute;right: 30px;top: 120px;}
+.header-right > ul.menu > li > ul.sub-menu > li.right-menu{width: 73%;position: relative;}
+.header-right > ul.menu > li > ul.sub-menu > li.right-menu::before{content: '';display: block;width: 200px;height: 100%;background-color: #252525;position: absolute;left: 0;top: 0;}
+.header-right > ul.menu > li > ul.sub-menu > li.right-menu > ul {background-color: #252525;}
+.header-right > ul.menu > li > ul.sub-menu > li.right-menu > ul > li {width: 100%;position: relative;display: flex;height: auto;}
+.header-right > ul.menu > li > ul.sub-menu > li.right-menu > ul > li > a{width: 200px; display: block; color: #fff;font-size: 16px;font-weight: 400;border-bottom: 1px solid #555;display: flex;align-items: center;padding-left: 15px;min-height: 55px;}
+.header-right > ul.menu > li > ul.sub-menu > li.right-menu > ul > li > ul{width: calc(100% - 200px); background-color: #f8f8f8;border-bottom: 1px solid #555;display: flex;flex-wrap: wrap;padding: 15px 0;}
+.header-right > ul.menu > li > ul.sub-menu > li.right-menu > ul > li > ul > li{width: 210px;margin-left: 20px;}
+.header-right > ul.menu > li > ul.sub-menu > li.right-menu > ul > li > ul > li > a{display: block; font-size: 14px;position: relative;line-height: 20px;}
+.header-right > ul.menu > li > ul.sub-menu > li.right-menu > ul > li > ul > li > a::before{content: '';position: absolute;left: -10px;top: 50%;transform: translate(0,-50%); width: 4px;height: 4px;border-radius: 4px;background-color: #bc0130;}
+
+
+#header .container .header-right ul.search-total{margin-left: 15px;}
+#header .container .header-right ul.search-total > li {}
+#header .container .header-right ul.search-total > li + li {margin-left: 15px;}
+#header .container .header-right ul.search-total > li a {}
+
+#header .container .header-right ul.menu > li > a:hover{color: #bc0130;}
+#header .container .header-right ul.menu > li > a:hover::after{background-color: #bc0130;}
+
+
+
+@media all and (max-width:1240px){
+  #header .container .header-right ul.menu {font-size: 18px;font-weight: 700;display: none;}
+}
+

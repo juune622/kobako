@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+/* reset for mobile */
+.pc {display: none !important;}
+br.only-pc {content: '';}
+br.only-pc::after {content: ' ';}
+
+
+/* 전역 변수 설정 */
+:root {
+
+}
+
+
+/* common (include, layout) */
+
+
+
+
+
+
+
+
+

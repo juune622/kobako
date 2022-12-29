@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, minimal-ui">
+    <meta name="apple-mobile-web-app-title" content="kobako">
+    <title>HOME | 한국방송광고진흥공사</title>
+    <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/web-font.css" type="text/css">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all and (min-width: 1023.9px)">
+    <link rel="stylesheet" href="./css/style-mobile.css" type="text/css" media="all and (max-width: 1023.9px)">
+    <script src="./lib/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./js/index.js"></script>
+  </head>
+  <body class="main">
+    <div id="wrapper">
+      <a href="#main" id="skip-nav">본문 바로가기</a>
+        <header id="header">
+          <div class="container">
+            <h1><a href="#"><img src="./img/logoOn.png" alt="한국방송광고진흥공사"></a></h1>
+            <div class="header-right">
+              <ul class="menu">
+                <li>
+                  <a href="#">기관소개</a>
+                  <ul class="sub-menu">
+                    <li class="left-info">
+                      <div>
+                        <h2>기관소개</h2>
+                        <p>국민과 함께, 미디어와 함께<br>스마트광고허브 kobaco</p>
+                        <img src="./img/allmenu_img1.png" alt="">
+                      </div>
+                    </li>
+                    <li class="right-menu">
+                      <ul>
+                        <li>
+                          <a href="#">kobaco 소개</a>
+                          <ul>
+                            <li><a href="#">비전</a></li>
+                            <li><a href="#">CI</a></li>
+                            <li><a href="#">CEO</a></li>
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="#">임원진</a></li>
+                            <li><a href="#">사업소개</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">유관기관현황</a>
+                          <ul>
+                            <li><a href="#">방송사현황</a></li>
+                            <li><a href="#">광고회사현황</a></li>
+                            <li><a href="#">유관언론단체현황</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">오시는 길</a>
+                          <ul>
+                            <li><a href="#">kobaco본사</a></li>
+                            <li><a href="#">한국광고문화회관</a></li>
+                            <li><a href="#">방송회관</a></li>
+                            <li><a href="#">kobaco 연수원</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">사이버홍보실</a>
+                          <ul>
+                            <li><a href="#">kobaco 뉴스</a></li>
+                            <li><a href="#">홍보동영상</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">열린경영</a>
+                </li>
+                <li>
+                  <a href="#">주요사업</a>
+                </li>
+                <li>
+                  <a href="#">정보마당</a>
+                </li>
+                <li>
+                  <a href="#">고객마당</a>
+                </li>
+                <li>
+                  <a href="#">FAMILY SITES</a>
+                </li>
+              </ul>
+              
+              <ul class="search-total">
+                <li><a href="#"><img src="./img/search.png" alt="검색하기"></a></li>
+                <li><a href="#"><img src="./img/lang.png" alt="언어선택"></a></li>
+                <li><a href="#"><img src="./img/siteMap.png" alt="더보기"></a></li>
+              </ul>
+            
+            </div>
+          </div>
+        </header>
+    </div>
+
+<script>
+'use strict';
+
+setGNB();
+
+function setGNB() {
+
+  $('#header ul.menu > li > a').on('mouseenter', function() {
+      $('#header ul.menu > li > ul').removeClass('on');
+        $(this).next().addClass('on')
+  });
+
+  $('#header ul.menu > li').on('focusin', function() {
+      $(this).find('> a').trigger('mouseenter');
+  });
+
+  $('#header ul.menu > li > ul.sub-menu').on('focusout', function() {
+      $(this).find('ul.sub-menu').removeClass('on');
+  });
+
+  $('#header').on('mouseleave', function() {
+      $('#header ul.menu > li > ul').removeClass('on');
+  });
+
+}
+
+
+
+
+
+</script>
+
+  </body>
+</html>
+
+

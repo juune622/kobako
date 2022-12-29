@@ -1,0 +1,61 @@
+@charset 'utf-8';
+
+/* reset */
+html {line-height: 1.2; -webkit-text-size-adjust: 100%;}
+body {margin: 0;}
+main {display: block;}
+* {box-sizing: border-box;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, table, blockquote, pre, code {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700;}
+a {color: inherit; text-decoration: inherit; background-color: transparent;}
+img {vertical-align: middle; max-width: 100%; border-style: none;}
+li {list-style: none;}
+address, em, i, cite {font-style: normal;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 1px; height: 1px; margin-top: -1px;}
+i[class^="fa"] {position: relative; display: inline-block; vertical-align: middle;}
+i[class^="fa"] span {position: absolute; left: -9999px;}
+.ir-hidden {position: absolute !important; left: -9999px !important;}
+
+
+
+
+
+/* 참고 : https://necolas.github.io/normalize.css/8.0.1/normalize.css */
+
+/*
+[body]
+body {font-family: 'HanSansNeo', '나눔고딕', 'NanumGothic', '맑은 고딕', 'malgun gothic', '돋움', Dotum, 'Apple SD Gothic Neo', Helvetica, sans-serif; font-weight: 400; font-size: 14px; color: #1b2529 ; background: #ffffff;}
+
+[animation]
+animation: main-bg-animation 3s ease-out 0.1s 1 normal forwards running;
+animation: name duration timing-function delay iteration-count direction fill-mode play-state
+duration: 0(default), time, initial, inherit
+timing-function: ease(default), linear, ease-in, ease-out, ease-in-out, step-start, step-end, steps(int, start|end), cubic-bezier(n, n, n, n), initial, inherit
+deley: 0s(default), time, initial, inherit
+direction: normal(default), reverse, alternate, alternate-reverse, initial, inherit
+iteration-count: 1(default), number, infinite, initial, inherit
+fill-mode: none(default), forwards, backwards, both, initial, inherit
+play-state: running(default), paused, initial, inherit  (IE에서는 축약표현에 포함시 동작하지 않음, 별도로 사용)
+
+[animation 최종 사용 예시]
+animation: main-bg-animation 3s ease-out 0s 1 normal forwards;
+animation-play-state: running;
+
+@keyframes main-bg-animation {
+    0% {opacity: 1; transform: rotate(0) scale(1);}
+    100% {opacity: 0; transform: rotate(-3deg) scale(1.2);}
+}
+
+[스크롤바 디자인]
+.custom-scroll {overflow: auto; scrollbar-width: thin; scrollbar-color: #e0e0e0; -ms-overflow-style: none;}    /* firefox, IE 고려
+.custom-scroll::-webkit-scrollbar {width: 6px;}
+.custom-scroll::-webkit-scrollbar-thumb {background-color: transparent; border-radius: 10px;}
+.custom-scroll:hover::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0.2);}
+.custom-scroll::-webkit-scrollbar-track {background-color: transparent;}
+
+[fontawesome css 입력]
+#main-visual ul.slide > li div.content a::after {content: '\f061'; font-family: 'Font Awesome 6 Free'; font-weight: 700;}
+
+*/
+
