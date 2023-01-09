@@ -161,6 +161,26 @@ body.no-scroll {}
 .small-slide .container p.control a.play.on i:first-child{display: none;}
 .small-slide .container p.control a.play.on i + i{display: block;}
 
+/* !section business */
+
+#business {max-width: 1480;margin: 0 auto;display: flex;}
+.business-info{width: calc(26% - 10px);margin-right: 20px;}
+.business-category{width: calc(74% - 10px);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ! */
+
 @media all and (max-width:1240px){
   #header .container .header-right ul.menu {font-size: 18px;font-weight: 700;display: none;}
 }
