@@ -543,8 +543,44 @@
             </div>
           </section>
           <section id="business">
-            <ul class="business-info"></ul>
-            <ul class="business-category"></ul>
+            <h3>kobaco 주요사업</h3>
+            <p>kobaco는 광고산업 발전을 위해 다양한 사업을 전개하고 있습니다</p>
+            <div class="container">
+              <ul class="business-info">
+                <li><a href="#"><span>조직도</span></a></li>
+                <li><a href="#"><span>지사소개</span></a></li>
+                <li><a href="#"><span>경영공시</span></a></li>
+                <li><a href="#"><span>정보공개제도안내</span></a></li>
+              </ul>
+              <ul class="business-category">
+                <li>
+                  <a href="#">
+                    <h4 class="color-brown">방송광고영업</h4>
+                    <p class="subject color-brown">방송광고 영업대행을 통해 방송의 공공성과 다양성을 보장합니다.</p>
+                    <div class="line bg-brown"></div>
+                    <p class="content"> kobaco는 우리나라 지상파 방송사와 지상파 DMB매체의 방송광고 영업을 대행합니다.</p>
+                    <div class="cross-rotate bg-brown">
+                      <span href="#">
+                        <img src="./img/plus_white.png" alt="광고영업더보기">
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <h4 class="color-brown">영업IT인프라</h4>
+                    <p class="subject color-navy">코바코 정보화 사업의 모든 것<br>Digital kobaco</p>
+                    <div class="line bg-navy"></div>
+                    <p class="content"> kobaco는 우리나라 지상파 방송사와 지상파 DMB매체의 방송광고 영업을 대행합니다.</p>
+                    <div class="cross-rotate bg-brown">
+                      <span href="#">
+                        <img src="./img/plus_white.png" alt="광고영업더보기">
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </section>
         </main>
     </div>
@@ -752,6 +788,12 @@ function nooriOn() {
   let noories = document.querySelectorAll('.noori > ul > li > a');
   noories.forEach(function(noori,i){
     noori.addEventListener('mouseenter',function() {
+      noories.forEach(function(noori){
+      noori.parentElement.classList.remove('on');
+      })
+      noori.parentElement.classList.add('on');
+    }, false);
+    noori.addEventListener('focusin',function() {
       noories.forEach(function(noori){
       noori.parentElement.classList.remove('on');
       })
