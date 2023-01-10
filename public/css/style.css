@@ -49,7 +49,8 @@ body.no-scroll {}
 .header-right > ul.menu > li > ul.sub-menu > li.right-menu > ul > li > ul > li > a{display: block; font-size: 14px;position: relative;line-height: 20px;}
 .header-right > ul.menu > li > ul.sub-menu > li.right-menu > ul > li > ul > li > a::before{content: '';position: absolute;left: -10px;top: 50%;transform: translate(0,-50%); width: 4px;height: 4px;border-radius: 4px;background-color: #bc0130;}
 
-
+.header-right > ul.menu > li > ul.sub-menu > li.right-menu > ul > li:hover {background-color: #bc0130;}
+.header-right > ul.menu > li > ul.sub-menu > li.right-menu > ul > li > ul > li > a:hover{color: #bc0130;}
 #header .container .header-right ul.search-total{margin-left: 15px;}
 #header .container .header-right ul.search-total > li {}
 #header .container .header-right ul.search-total > li + li {margin-left: 15px;}
@@ -163,7 +164,7 @@ body.no-scroll {}
 
 /* !section business */
 
-#business {max-width: 1480px;margin: 0 auto;padding: 100px 0;}
+#business {max-width: 1480px;margin: 0 auto;padding: 80px 0;}
 #business h3{position: relative;font-size: 30px;font-weight: 400;text-align: center;}
 #business h3::after{content: '';position: absolute;width: 8px;height: 8px;border-radius: 4px;left: 50%;top: -5px;transform: translate(120px,0); background-color: #bc0130;}
 #business > p{font-size: 16px;margin: 12px 0 55px;text-align: center;}
@@ -182,9 +183,9 @@ ul.business-category > li {width: 33.3333%;border: 1px solid #e4e4e4;height: 256
 ul.business-category > li > a {display: block;height: 100%;padding: 27px;position: relative;}
 ul.business-category > li > a > h4{font-size: 25px;}
 ul.business-category > li > a p{font-size: 16px;}
-ul.business-category > li > a p.subject{margin-top: 13px;}
+ul.business-category > li > a p.subject:nth-of-type(1){margin-top: 13px;}
 ul.business-category > li > a p.content{color: #666;}
-ul.business-category > li > a div.line{margin: 10px 0;height: 2px;}
+ul.business-category > li > a div.line{margin: 9px 0;height: 2px;}
 ul.business-category > li > a div.cross-rotate{position: absolute;right: 0;top: 0;width: 45px;height: 45px;}
 ul.business-category > li > a div.cross-rotate span{display: inline-block;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);transition: transform 1s;}
 ul.business-category > li > a div.cross-rotate span img{display: block;}
@@ -216,14 +217,14 @@ ul.business-category > li > a:hover div.cross-rotate span {transform: translate(
 .color-navy{color: #2E4471;}
 .color-blue{color: #5151d5;}
 .color-red{color: #ce0d5a;}
-.color-grey{color: #333;}
+.color-grey{color: #5d5d5d;}
 .color-green{color: #31967b;}
 
 .bg-brown{background-color: #cd7502;}
 .bg-navy{background-color: #2E4471;}
 .bg-blue{background-color: #5151d5;}
 .bg-red{background-color: #ce0d5a;}
-.bg-grey{background-color: #333;}
+.bg-grey{background-color: #5d5d5d;}
 .bg-green{background-color: #31967b;}
 
 
