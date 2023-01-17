@@ -638,6 +638,68 @@
             </div>
           </section>
         </main>
+        <footer id="footer">
+          <div class="footer-top">
+            <ul>
+              <li><a href="#" class="personal">개인정보처리방침</a></li>
+              <li><a href="#">이메일무단수집거부</a></li>
+              <li><a href="#">방송광고 판매대행 약관</a></li>
+              <li><a href="#">저작권정책</a></li>
+              <li><a href="#">정부24</a></li>
+              <li><a href="#">복지·보조금 부정 신고센터</a></li>
+              <li><a href="#">뷰어다운로드</a></li>
+              <li><a href="#">찾아오시는길</a></li>
+              <li class="family-site">
+                <a href="#">FAMILY SITES</a>
+                <ul>
+                  <li><a href="#">미디어광고연구소</a></li>
+                  <li><a href="#">kobaco 광고교육원</a></li>
+                  <li><a href="#">kobaco 연수원</a></li>
+                  <li><a href="#">kobaco 광고도서관</a></li>
+                  <li><a href="#">kobaco 광고박물관</a></li>
+                  <li><a href="#">kobaco 통계시스템</a></li>
+                  <li><a href="#">kobaco 중소기업방송광고지원</a></li>
+                  <li><a href="#">kobaco 광고문화회관/방송회관</a></li>
+                </ul>
+                <span class="up-arrow"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <div class="btm-container">
+              <div class="footer-logo">
+                <a href="#"><img src="./img/logoOn.png" alt="한국방송광고진흥공사"></a>
+              </div>
+              <div class="content">
+                <ul>
+                  <li>서울시 중구 세종대로 124</li>
+                  <li>대표전화 : 02-731-7114</li>
+                  <li>이메일 : PR@kobaco.co.kr</li>
+                  <li>copyright(c) korea broadcast advertising corp. all rights reserved.</li>
+                </ul>
+              </div>
+              <div class="social">
+                <a href="#"><img src="./img/wa.png" alt="과학기술정보통신부"></a>
+                <a href="#"><img src="./img/facebook-circle.png" alt="facebook"></a>
+                <a href="#"><img src="./img/blog-circle.png" alt="네이버블로그"></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="#"><span></span>방송광고안내</a></li>
+              <li><a href="#"><span></span>방송광고 거래 신청</a></li>
+              <li><a href="#"><span></span>KOBANET</a></li>
+              <li><a href="#"><span></span>지원사업</a></li>
+              <li><a href="#"><span></span>사전정보공개</a></li>
+              <li><a href="#"><span></span>저작물 이용신청</a></li>
+              <li><a href="#"><span></span>공익광고 주제 제안</a></li>
+            </ul>
+          </div>
+          <a href="index.html" class="top-btn">TOP
+            <span class="up-arrow"></span>
+          </a>
+        </footer>
     </div>
 
 <script>
@@ -857,8 +919,14 @@ function nooriOn() {
   });
 }
 
+showFamilySite();
 
-
+function showFamilySite() {
+  const family = document.querySelector('li.family-site > a');
+  family.addEventListener('click',function() {
+    this.nextElementSibling.classList.toggle('on')
+  },false)
+}
 
 
 
