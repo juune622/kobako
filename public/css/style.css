@@ -214,14 +214,15 @@ ul.location > li > ul {position: absolute;left: 0;top: 100%;background-color: #f
 ul.location > li > ul.on {display: block;}
 ul.location > li > ul > li + li {border-top: 1px solid #ddd;}
 ul.location > li > ul > li > a {display: inline-block;padding: 7px 0;}
+ul.location > li > ul > li > a:hover{color: #bc0130;}
 
 /* !sub-vision-contents */
 
 #vision-contents { padding: 60px 0 210px;color: #666;font-size: 16px;}
 #vision-contents .contents-wrapper {max-width: 1200px;margin: 0 auto;}
 .content-head {position: relative;margin-bottom: 80px;border-bottom: 2px solid #ddd;}
-.content-head h3 {font-size: 35px;color: #222;position: relative;}
-.content-head h3::after{content: '';position: absolute;width: 8px;height: 8px;border-radius: 8px;left: 70px; top: -5px; background-color: #bc0130;}
+.content-head h3 {font-size: 35px;color: #222;position: relative;display: inline-block;}
+.content-head h3::after{content: '';position: absolute;width: 8px;height: 8px;border-radius: 8px;right: -10px; top: -5px; background-color: #bc0130;}
 .content-head p {padding: 25px 0;}
 .content-head .right {position: absolute;right: 0;bottom: 25px;}
 .content-head .right a + a {margin-left: 10px;}
@@ -235,13 +236,37 @@ ul.location > li > ul > li > a {display: inline-block;padding: 7px 0;}
 .content-info .right h4{color: #bc0130;font-size: 22px;margin-bottom: 20px;position: relative;display: inline-block;}
 .content-info .right h4::after{content: '';position: absolute;width: 6px;height: 6px;border-radius: 6px;right: -10px; top: -5px; background-color: #bc0130;}
 
+/* !sub-management-content */
+.management-content {max-width: 1200px;margin: 0 auto;font-size: 16px;color: #666;}
+ul.manage {display: flex;margin-bottom: 100px;}
+ul.manage > li {width: 50%;border: 1px solid #ddd;background-color: #fafafa;}
+ul.manage > li > a {display: block;text-align: center;padding: 15px 0;position: relative;}
+ul.manage > li.on > a {background-color: #fff;font-weight: 700;}
+ul.manage > li.on > a::after {content: '';position: absolute;left: 0;top: 0;width: 100%;height: 3px;background-color: #bc0130;}
+
+.management1 {margin-bottom: 100px; display: none;}
+.management1.on{display: block;}
+.management1 .head-content {position: relative;padding: 25px 0;width: 100%;}
+.management1 .head-content p {color: #333;line-height: 33px;font-size: 25px;text-align: center;}
+.management1 .head-content p::after {content: '';width: 80px;height: 3px;position: absolute;left: 50%;top: 0;transform: translate(-50%,0);background-color: #bc0130;}
+.management1 .main-content h3 {position: relative;margin: 40px 0 10px;padding-left: 20px; font-size: 20px;color: #333;}
+.management1 .main-content h3::after {content: '';position: absolute;width: 4px;height: 15px;background-color: #bc0130;left: 5px;top: 5px;transform: rotate(30deg);}
+.management1 .main-content p {margin-bottom: 6px;}
+
+.management2 {margin-bottom: 100px;display: none;}
+.management2.on {display: block;}
+.management2 h3{position: relative;margin: 40px 0 10px;padding-left: 20px; font-size: 20px;color: #333;}
+.management2 h3::after{content: '';position: absolute;width: 4px;height: 15px;background-color: #bc0130;left: 5px;top: 5px;transform: rotate(30deg);}
+.management2 table {border: 1px solid #ddd;text-align: center;border-collapse: collapse;}
+.management2 table thead {border: 1px solid #ddd;}
+.management2 table thead th{border: 1px solid #ddd;padding: 10px 4px;border-top: 3px solid #bc0130;}
+.management2 table tr{border: 1px solid #ddd;}
+.management2 table td{border: 1px solid #ddd;padding: 7px 4px;}
 
 
-
-
-
-
-
+.contact-number {max-width: 1200px;margin: 0 auto;padding: 25px;border: 1px solid #ddd;}
+.contact-number h4 {margin-bottom: 5px;color: #333;}
+.contact-number p {line-height: 25px;}
 
 
 
