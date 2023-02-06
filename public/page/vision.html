@@ -18,14 +18,76 @@
               <div class="location-container">
                 <ul class="location">
                   <li class="home"><a href="#"><img src="./img/sub/home.png" alt="HOME"></a></li>
-                  <li><a href="#">기관소개</a></li>
-                  <li><a href="#">kobako 소개</a></li>
-                  <li class="text-bold"><a href="#">비전</a></li>
+                  <li>
+                    <a href="#">기관소개</a>
+                    <ul>
+                      <li><a href="#">기관소개</a></li>
+                      <li><a href="#">열린경영</a></li>
+                      <li><a href="#">주요사업</a></li>
+                      <li><a href="#">정보마당</a></li>
+                      <li><a href="#">고객마당</a></li>
+                      <li><a href="#">FAMILY SITES</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">kobako 소개</a>
+                    <ul>
+                      <li><a href="#">kobako 소개</a></li>
+                      <li><a href="#">유관기관현황</a></li>
+                      <li><a href="#">오시는 길</a></li>
+                      <li><a href="#">사이버홍보실</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="text-bold" href="#">비전</a>
+                    <ul>
+                      <li><a href="#">비전</a></li>
+                      <li><a href="#">CI</a></li>
+                      <li><a href="#">CEO</a></li>
+                      <li><a href="#">조직도</a></li>
+                      <li><a href="#">임원진</a></li>
+                      <li><a href="#">사업소개</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </div>
           </section>
-          <section id="vision-contents"></section>
+          <section id="vision-contents">
+            <div class="contents-wrapper">
+              <div class="content-head">
+                <h3>비전</h3>
+                <p>국민과 함께, 미디어와 함께 대한민국 광고산업의 미래를 열어갑니다</p>
+                <div class="right">
+                  <a href="#"><img src="../img/sub/icon_link.png" alt="링크"></a>
+                  <a href="#"><img src="../img/sub/icon_printer.png" alt="프린터"></a>
+                </div>
+              </div>
+              <div class="content-bg">
+                <img src="../img/sub/vision_11.png" alt="국민과 함께 미디어와 함께 스마트광고허브 kobako">
+              </div>
+              <p class="content-text">광고를 통해 국가경제와 <b>미디어산업에 활기를 불어넣는 믿음직한 동반자</b>가 되겠습니다</p>
+              <div class="content-info">
+                <div class="left">
+                  <img src="../img/sub/vision_2.png" alt="">
+                </div>
+                <div class="right">
+                  <div>
+                    <h4>국민과 함께</h4>
+                    <p>지난 40년간 코바코는 방송광고 판매와 광고진흥 사업을 수행하며 방송의 공공성과 다양성을 지키고 광고산업의 성장기반을 다져왔습니다. 앞으로도 공공에 이바지하는 사업추진과 사회적 책임을 다하는 경영활동을 통해 광고사업의 상생발전과 국민의 윤택한 삶에 기여함으로써, 더욱 신뢰받는공기업이 되겠습니다.</p>
+                  </div>
+                  <div>
+                    <h4>미디어와 함께</h4>
+                    <p>코바코는 방송사에 안정적인 제작재원을 공급하고, 특히 중소지역방송의 균형발전에 이바지하며 우리나라 방송산업의 중요한 축을 담당해왔습니다. 이제 기존의 서비스에서 한 차원 나아가, 지상파를 비롯해 방송과 통신 등 미디어산업 내 모든 주체가 건강하고 풍요롭게 성장할 수 있는 토대를 가꾸어갈 것입니다.</p>
+                  </div>
+                  <div>
+                    <h4>스마트 광고 허브</h4>
+                    <p>코바코는 광고 관련 유일한 공기업으로서, 광고와 관련한 고객의 모든 니즈를 만족시킬 수 있도록 부단한 노력을 기울이고 있습니다. 4차 산업혁명시대를 맞아 빠르게 진화하는 미디어환경에서도, 방송과 통신뿐 아니라 차세대(smart) 미디어까지 아울러 광고산업의 미래가치를 새롭게 창출해 나갈 것입니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
         <?php include '../include/footer.html'; ?>
     </div>
@@ -33,6 +95,11 @@
 <script>
 'use strict';
 
+document.querySelectorAll('ul.location > li > a').forEach(function(location){
+  location.addEventListener('click',function() {
+    location.nextElementSibling.classList.toggle('on');
+  },false)
+})
 
 
 
