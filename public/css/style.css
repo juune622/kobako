@@ -88,12 +88,12 @@ body.no-scroll {}
 
 #banner-slide .text-slide {display: flex;position: relative;height: 74px;width: 100%;font-size: 16px;}
 #banner-slide .text-slide p.control{position: relative;width: 20%;height: 100%;line-height: 74px;background-color: #bc0130;color: #fff;padding-left: 60px;}
-#banner-slide .text-slide p.control a.prev {margin: 0 20px 0 10px;}
-#banner-slide .text-slide p.control a.play{position: absolute;left: 50%;top: 53%;transform: translate(25px,-50%);}
+#banner-slide .text-slide p.control a {margin-left: 10px;}
+#banner-slide .text-slide p.control a.play{}
 #banner-slide .text-slide p.control a.play i{display: none;}
-#banner-slide .text-slide p.control a.play i:first-child{display: block;}
+#banner-slide .text-slide p.control a.play i:first-child{display: inline-block;}
 #banner-slide .text-slide p.control a.play.on i:first-child{display: none;}
-#banner-slide .text-slide p.control a.play.on i + i{display: block;}
+#banner-slide .text-slide p.control a.play.on i + i{display: inline-block;}
 
 #banner-slide .text-slide ul.slide-text {width: 80%;height: 100%;position: relative;background-color: #f8f8f8;}
 #banner-slide .text-slide ul.slide-text li{position: absolute;left: 100px;top: 50%;transform: translate(0,-50%);display: none;}

@@ -101,7 +101,29 @@ document.querySelectorAll('ul.location > li > a').forEach(function(location){
   },false)
 })
 
+setGNB();
 
+function setGNB(){
+
+  $('#header ul.menu > li > a').on('mouseenter', function() {
+    $('#header ul.menu > li > ul.sub-menu').css({'height': '0px'});
+    if ($(this).next().length > 0) {
+      $(this).next().css({'height': 'auto'});
+    }
+  });
+
+  $('#header').on('mouseleave', function() {
+    $('#header ul.menu > li > ul.sub-menu').css({'height': '0px'});
+  });
+
+  $('#header ul.menu > li').on('focusin', function() {
+      $(this).find('> a').trigger('mouseenter');
+  });
+
+  $('ul.menu > li:last-child > ul.sub-menu > li.right-menu > ul > li:last-child > ul > li:last-child').on('focusout', function() {
+    $('ul.sub-menu').css({'height': 0});
+  });
+};
 
 
 
