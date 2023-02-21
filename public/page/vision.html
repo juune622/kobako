@@ -17,8 +17,8 @@
             <div class="location-wraps">
               <div class="location-container">
                 <ul class="location">
-                  <li class="home"><a href="#"><img src="./img/sub/home.png" alt="HOME"></a></li>
-                  <li>
+                  <li class="home"><a href="./index.html"><img src="./img/sub/home.png" alt="HOME"></a></li>
+                  <li class="pc">
                     <a href="#">기관소개</a>
                     <ul>
                       <li><a href="#">기관소개</a></li>
@@ -29,7 +29,7 @@
                       <li><a href="#">FAMILY SITES</a></li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="pc">
                     <a href="#">kobako 소개</a>
                     <ul>
                       <li><a href="#">kobako 소개</a></li>
@@ -58,18 +58,18 @@
               <div class="content-head">
                 <h3>비전</h3>
                 <p>국민과 함께, 미디어와 함께 대한민국 광고산업의 미래를 열어갑니다</p>
-                <div class="right">
-                  <a href="#"><img src="../img/sub/icon_link.png" alt="링크"></a>
-                  <a href="#"><img src="../img/sub/icon_printer.png" alt="프린터"></a>
+                <div class="right pc">
+                  <a href="#" ><img src="./img/sub/icon_link.png" alt="링크"></a>
+                  <a href="#" ><img src="./img/sub/icon_printer.png" alt="프린터"></a>
                 </div>
               </div>
               <div class="content-bg">
-                <img src="../img/sub/vision_11.png" alt="국민과 함께 미디어와 함께 스마트광고허브 kobako">
+                <img src="./img/sub/vision_11.png" alt="국민과 함께 미디어와 함께 스마트광고허브 kobako">
               </div>
               <p class="content-text">광고를 통해 국가경제와 <b>미디어산업에 활기를 불어넣는 믿음직한 동반자</b>가 되겠습니다</p>
               <div class="content-info">
                 <div class="left">
-                  <img src="../img/sub/vision_2.png" alt="">
+                  <img src="./img/sub/vision_2.png" alt="">
                 </div>
                 <div class="right">
                   <div>
@@ -125,7 +125,14 @@ function setGNB(){
   });
 };
 
+showFamilySite();
 
+function showFamilySite() {
+  const family = document.querySelector('li.family-site > a');
+  family.addEventListener('click',function() {
+    this.nextElementSibling.classList.toggle('on')
+  },false)
+}
 
 
 
